@@ -28,7 +28,7 @@ The temperature measurement is then copied to other cages in the cycle before th
 
 #### Method
 
-1. Database flags temperature errors > 2 and > 15 deg C
+1. Database flags temperature errors < 2 and > 15 deg C
 2. Input errors set to NA, if repeated measurements is > *X*
 3. mean temperatures are calculated pr. cycle pr. day (mean cycle temperature) and just pr. day (mean temperature)
 4. outliers are removed by abs(residuals) > *Z* from mean cycle temperature - mean temperature (all of the data)
