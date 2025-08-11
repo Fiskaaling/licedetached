@@ -5,3 +5,7 @@
 
 # README preview
 README.html
+
+# processed data
+data/processed/*
+images/*

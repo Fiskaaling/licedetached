@@ -1,12 +1,13 @@
 # LiceDetached
 
-Scrits generated in the LiceDetached project
+Scripts generated in the LiceDetached project
 
 
 ## Paper: Direct and indirect infection
 
 
-### Temperuature Quality Assurance
+### Temperature Quality Assurance
+
 
 **Common practice for older temperature registrations:**
 Temperature measurements only required to be measured in *n* amount of cages per cycle, where *n* most commonly is one.
@@ -43,3 +44,6 @@ The temperature measurement is then copied to other cages in the cycle before th
 9. outliers are found by abs(residuals) > *Z* from mean cycle temperature (included interpolated) - *MA*
 10. outliers are replaced with either cycle interpolations, daily interpolations, or *MA* depending on the origin of the outlier. ie. if the outlier was a raw measurement then it is replaced with the cycle interpolation and if the outlier was a cycle interpolation then it is replaced with the daily interpolation and so forth.
 11. the temperatures at the beginning and end of the cycle are out of range for the MA calculated pr. cycle, in these cases the residuals are calculated from the
+
+
+*use this script:* [temperature_QA.R](scripts/temperature_QA.R), note that only a small test dataset is provided in the data folder.
